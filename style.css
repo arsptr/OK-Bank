@@ -372,6 +372,10 @@ body {
   color: #393738;
   letter-spacing: 0.01em;
 }
+.personal__merchant {
+  font-weight: 400;
+  color: #393738;
+}
 details > summary {
   list-style-type: none;
 }
