@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK! Bank Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="https://www.okbank.co.id/id" id="navbar__logo"><img src="/asset/logo-brand.png"
+                    alt="ok! bank logo"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="https://www.okbank.co.id/id" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="https://m.okbank.co.id/intn/main" class="navbar__links" id="download-page">e-Banking</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="https://m.okbank.co.id/resources/intn/common/download_en.html" class="button"
+                        id="download">Download</a>
+                </li>
+                <li class="navbar__item">
+                    <a class=" navbar__links" id=" language__option">IN | <span>
+                            EN</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- form apply KTA -->
+    <div class="KTA__title">
+        <img src="/asset/ok-logo.png" alt="ok bank logo">
+        <h4 class="hero__heading2">Pengajuan Pinjaman KTA</h4>
+    </div>
+    <div class="form__container">
+        <div class="form__heading">
+            <h4>
+                <img class="numb__one" src="/asset/one.svg" alt="form verifikasi nasabah">
+                Verifikasi Info Nasabah*
+            </h4>
+        </div>
+        <div class="form__verification">
+            <form class="form__verif">
+                <label for="fname" id="fname">Name</label><br>
+                <input type="text" name="fname" required><br>
+                <label for="domisili" id="domisili">Wilayah Domisili</label><br>
+                <input type="text" name="domisili" required><br>
+                <label for="no-KTP" id="no-KTP">No. KTP</label><br>
+                <input type="number" name="no-KTP" placeholder="16 digit angka" required><br>
+                <label for="no-hp" id="no-hp">No. Handphone</label><br>
+                <input type="tel" name="no-hp" placeholder="masukkan nomor hp yang masih aktif" required><br>
+            </form>
+        </div>
+        <div class="form__heading">
+            <h4>
+                <img class="numb__two" src="/asset/two.svg" alt="form apply KTA">
+                Informasi Pengajuan Pinjaman*
+            </h4>
+        </div>
+        <div class="form__apply__KTA">
+            <form class="form__apply">
+                <label for="jobs" id="jobs">Pekerjaan</label><br>
+                <select id="jobs" name="jobs" required>
+                    <option value="Karyawan">Karyawan</option>
+                    <option value="Pengusaha">Pengusaha</option>
+                    <option value="Pelajar">Pelajar</option>
+                    <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+                    <option value="Bukan Pelajar">Bukan Pelajar</option>
+                    <option value="Perusahaan">Perusahaan</option>
+                </select><br>
+                <label for="merchant" id="merchant">Perushaan atau Nama
+                    Toko (opsional)</label><br>
+                <input class="form__input" type="text" name="merchant"><br>
+                <label for="myfile">Upload KTP/NPWP</label>
+                <input type="file" id="myfile" name="myfile">
+                <label for="email" id="email">No. Handphone</label><br>
+                <input class="form__input type=" email" name="email" placeholder="your@email.com"><br>
+                <label for="kartu__kredit" id="kartu__kredit">Kartu Kredit</label><br>
+                <input class=" radioButton" type="radio" name="kartu__kredit" value="punya">
+                <label for="kartu__kredit" id="kartu__kredit">Punya</label>
+                <input type="radio" name="kartu__kredit" value="tidak punya">
+                <label for="kartu__kredit" id="kartu__kredit">Tidak Punya</label><br>
+                <label for="jumlah__pinjaman" id="jumlah__pinjaman">Jumlah Pinjaman</label><br>
+                <input class="form__input type=" number" name="jumlah__pinjaman" required><br>
+                <label for="tujuan__pinjaman" id="tujuan__pinjaman">Tujuan Pinjaman</label><br>
+                <input class="form__input type=" text" name="tujuan__pinjaman" required><br>
+                <label for="status__bekerja" id="status__bekerja">Status Bekerja</label><br>
+                <input class="form__input type=" text" name="status__bekerja" required><br>
+                <label for="gaji__perbulan" id="gaji__perbulan">Gaji Perbulan (Rp.)</label><br>
+                <input class="form__input type=" number" name="gaji__perbulan" required><br>
+
+                <h5>Hanya dengan memberikan data omset saja, masalah modal kerja, dana pembelian, dana untuk ekspansi
+                    bisnis terselesaikan!</h5>
+                <input class="terms__checked" type="checkbox" id="apply__terms" name="apply__terms" value="agree">
+                <label for="apply__terms">Saya telah membaca syarat pengajuan pinjaman OK Bank, dan setuju.
+                    <span id="popUp__terms">Lihat Istilah</span></label><br>
+                <button type="submit" class="main__btn2"><a style="color: #ffff;" href="form-KTA.html">Ajukan
+                        Sekarang!</a></button>
+                <button type="submit" class="secondary__btn"><a style="color: #fdc830;"
+                        href="index.html">Batal</a></button>
+            </form>
+            <!-- The Modal -->
+            <div id="popUp" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal__content">
+                    <span class="close">&times;</span>
+                    <h2>OK BANK Parsyaratan</h2>
+                    <p style="color:#393738">
+                        The applicant will follow the terms and conditions of the OK Bank personal loan product.
+                        <br><br>
+                        The terms of the loan, including the loan amount and interest rate, may change according to the
+                        results of the loan review.
+                        <br><br>
+                        Customer information written by the customer will be collected and provided to the OK Bank. OK
+                        The bank can use it to progress the loan and give it to the partner company.
+                        <br><br>
+                        For the loan application process, the debtor must agree that the bank can use the credit
+                        information and personal information of the debtor until the credit process is complete. If the
+                        debtor does not approve, there will be restrictions in the credit approval process.
+                        <br><br>
+                        Based on customer information provided, OK The bank conducts a loan review, loan payments can be
+                        made when completing the application (contract) after the loan agreement.
+                        <br><br>
+                        Loans will be sent to the bank account that the customer chooses (including other banks), and OK
+                        The bank will cover all costs incurred in loan transfers.
+                        <br><br>
+                        Loan installments must be made to the OK Bank customer account or the account specified by the
+                        Bank on the monthly contract specified by the customer. However, even if that day is the day of
+                        the agreement, the payment is made after the bank&39;s deadline will be considered a late
+                        payment, it is the customers responsibility.
+                        <br><br>
+                        The bank withdraws installments from the OK Bank account designated by the customer on the day
+                        of commitment. However, if the customer&39;s account balance is insufficient, only a portion of
+                        the amount can be withdrawn, as a result, the customer is responsible for the delay.
+                        <br><br>
+                        Repayment of installments follows the monthly payment schedule, bill fees vary between the first
+                        and last month because it depends on the number of days used.
+                        <br><br>
+                        Loan money will be sent to the customer&39;s account by reducing administration fees by 1% and
+                        provision fees by 1.5%.
+                        <br><br>
+                        If repayment is accelerated, the replacement fee is 2% of the total remaining principal debt.
+                        <br><br>
+                        If there is a delay in installment payments, the fee is 5% arrears per month from the total
+                        installments per month.
+                        <br><br>
+                        If the bank determines that the customer cannot pay the debt normally, the bank can charge the
+                        principal payment fee by confiscating the customer pension or social security insurance (BPJS)
+                        and severance pay.
+                        <br><br>
+                        Banks must notify customers in advance if there are changes to the products and services used by
+                        customers.
+                        <br><br>
+                        The customer must notify the bank immediately if there is a change in personal information when
+                        using the service.
+                        <br><br>
+                        During the loan period, customers can be contacted via telephone, SMS, DM, etc. To maintain
+                        products, offer services that can contact customers.
+                        <br><br><br>
+                        <bold>Ver.5 (2019.4.15)</bold>
+                    </p>
+                    <button class="main__btn3"><a style="color: #ffffff;">Ok!</a></button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- end of apply KTA -->
+
+    <script src="app.js"></script>
+</body>
+<div class="cs__wrapper">
+    <div class="cs__section">
+        <h4>Customer Service <span class="cs__bank">150 112</span></h4>
+    </div>
+    <div class="cs__section">
+        <h4>KTA Call Center <span class="cs__KTA">150 119</span></h4>
+    </div>
+    <div class="cs__section">
+        <h4>
+            <img src="/asset/icon-clock.svg" alt="">
+            Senin-Jumat | 08.00-16.00 WIB
+        </h4>
+    </div>
+</div>
+<footer>
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__links__wrapper">
+                <div class="footer__links__item">
+                    <img class="logo__about" src="/asset/logo__about.png" alt="Logo OK! Bank">
+                    <p>PT Bank Oke Indonesia Tbk terdaftar dan diawasi oleh Otoritas Jasa Keuangan dan
+                        peserta
+                        penjamin LPS.
+                    </p>
+                    <img class=" logo__ojk__lps" src="/asset/ojk-lps-logo.png" alt="logo OJK dan LPS">
+                </div>
+                <div class="footer__links__item">
+                    <h4>Product Kami</h4>
+                    <a href="#">Tabungan</a>
+                    <a href="#">Pinjaman</a>
+                    <a href="#">m-Banking</a>
+                </div>
+                <div class="footer__links__item">
+                    <h4>Tentang OK! Bank</h4>
+                    <a href="#">Profil Perusahaan</a>
+                    <a href="#">Hubungan Investor</a>
+                    <a href="#">Tata Kelola</a>
+                    <a href="#">Tanggung Jawab Sosial</a>
+                    <a href="#">Informasi</a>
+                    <a href="#">Karir</a>
+                </div>
+                <div class="footer__links__item">
+                    <h4>Alamat</h4>
+                    <p>Kantor Pusat</p>
+                    <p>
+                        Jl. Ir. H. Juanda no. 12
+                        RT. 14/RW. 4, Kb. Kelapa
+                        Kecamatan Gambir,
+                        Kota Jakarta Pusat, DKI Jakarta
+                        10120
+                    </p>
+                    <p>Cabang Lainnya</p>
+                </div>
+                <div class="footer__links__item">
+                    <h4 class="ok__bank__headline">Download:</h4>
+                    <a href="#"><img class="app__store" src="/asset/app-store-img.png"
+                            alt="download via iOS app store"></a>
+                    <a href="#"><img class="google__play" src="/asset/google-play-img.png"
+                            alt="download via android google play store"></a>
+                </div>
+            </div>
+        </div>
+        <section class="copyright">
+            <div class="copyright__wrapper">
+                <p>
+                    OK!Bank registered and supervised by Financial Services Authority (Otoritas Jasa Keuangan) .
+                    Copyright (c) 2017 OK!Bank. All Rights Reserved.
+                </p>
+                <div class="term__condition">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Sitemap</a>
+                    <img src="/asset/ok_financial_group.png" alt="ok! bank financial group">
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+
+</html>
