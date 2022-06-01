@@ -146,6 +146,10 @@ select {
   border: 1px solid #fdc830;
   filter: drop-shadow(2px 6px 10px rgba(237, 237, 237, 0.3));
 }
+.btn__cta__KTA {
+  display: flex;
+  flex-direction: row;
+}
 /* end of form apply */
 
 /* css modal */
